@@ -49,17 +49,20 @@ func main() {
 	if err !=nil {                                     //handle error
 		log.Fatal("ERROR ","ERROR",err)
 	}
-	
-	
 	for {
 		conn,err :=listener.Accept()                  //coonection get accepted for listinng 
+
+		fmt.Printf("\t There is a New HTTP message for you  : \r\n")
+	    fmt.Printf("==============================================\r\n")
+	
 		if err!=nil {
 			log.Fatal("ERROR ","ERROR",err)
 		}
 
 		for line := range getLinesChannel(conn) {      //printing the message like network like file
-			fmt.Printf("read: %s\n",line)
+			fmt.Println(line)
 		}
+		fmt.Printf("==============================================\r\n")
 		
 	
 	}
