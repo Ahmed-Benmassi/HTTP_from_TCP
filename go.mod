@@ -1,4 +1,4 @@
-module MODULE_NAME
+module httpfromtcp
 
 go 1.25.0
 
