@@ -35,9 +35,13 @@ func main() {
 		fmt.Printf("- Target: %s\n",r.RequestLine.RequestTarget)
 		fmt.Printf("- Version: %s\n",r.RequestLine.HttpVersion)
 		fmt.Printf("Headers: \n")
-		r.Headers.ForEach(func (n,v string)  {
+		r.Headers.ForEach(func (n,v string)  {    //printing headers filedline 
 			fmt.Printf("- %s: %s\n",n,v)
 		})
+		fmt.Printf("Body:\n")
+		fmt.Printf("%s\n",r.Body)
+
+
 		fmt.Printf("==============================================\r\n")
 
 		
