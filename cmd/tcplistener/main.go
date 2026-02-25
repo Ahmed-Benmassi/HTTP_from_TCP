@@ -30,15 +30,15 @@ func main() {
 			log.Fatal("ERROR ","ERROR",err)
 		}
 
-		fmt.Printf("Request line:\n")
-		fmt.Printf("- Method: %s\n",r.RequestLine.Method)		
+		fmt.Printf("Request line:\n")                             //printing Request line
+		fmt.Printf("- Method: %s\n",r.RequestLine.Method)		       
 		fmt.Printf("- Target: %s\n",r.RequestLine.RequestTarget)
 		fmt.Printf("- Version: %s\n",r.RequestLine.HttpVersion)
 		fmt.Printf("Headers: \n")
-		r.Headers.ForEach(func (n,v string)  {    //printing headers filedline 
+		r.Headers.ForEach(func (n,v string)  {                 //printing headers filedline 
 			fmt.Printf("- %s: %s\n",n,v)
 		})
-		fmt.Printf("Body:\n")
+		fmt.Printf("Body:\n")                                  // //printing Request line
 		fmt.Printf("%s\n",r.Body)
 
 

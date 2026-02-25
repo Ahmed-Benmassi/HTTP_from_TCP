@@ -73,13 +73,10 @@ func (h *Headers) Get(name string ) (string,bool) {        //get header keys and
 	return str,ok  
 }
 
-func (h *Headers) Set(name,value string )  {                //setting values to already valued names or empty values name 
+func (h *Headers) Replace(name,value string )  {                //setting values to already valued names or empty values name 
 	name=strings.ToLower(name)
-	if v,ok:=h.headers[name];ok {
-		h.headers[name]=fmt.Sprintf("%s,%s",v,value)
-	}else{
-		h.headers[name]=value	
-	}
+	h.headers[name]=value	
+	
 }
 
 func (h *Headers) ForEach(cb func(n,v string)) {              //doing a loop with foreach that calls afunc on every key and value to do something later 
@@ -110,7 +107,7 @@ func (h *Headers) Parse(data []byte) ( int, bool,  error) {           //parse HT
 			return 0,false,err
 		}
 		read+=idx +len(rn)                                               // Stores each header using Set.
-		h.Set(name,value)
+		h.Replace(name,value)
 		
 		
 	}
