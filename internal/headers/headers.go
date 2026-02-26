@@ -73,9 +73,28 @@ func (h *Headers) Get(name string ) (string,bool) {        //get header keys and
 	return str,ok  
 }
 
-func (h *Headers) Replace(name,value string )  {                //setting values to already valued names or empty values name 
+func (h *Headers) Replace(name,value string )  {                //replace values to already valued names or empty values name 
 	name=strings.ToLower(name)
 	h.headers[name]=value	
+	
+}
+
+func (h *Headers) Set(name, value string) {
+	if h == nil {
+		return
+	}
+
+	if h.headers == nil {
+		h.headers = make(map[string]string)
+	}
+
+	name = strings.ToLower(name)
+	h.headers[name] = value
+}
+
+func (h *Headers) Delete(name string )  {                //deleting keys
+	name=strings.ToLower(name)
+	delete(h.headers,name)	
 	
 }
 
