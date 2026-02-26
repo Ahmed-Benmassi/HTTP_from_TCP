@@ -1,4 +1,4 @@
-/assets/
-messages.txt
+assets/
+*.txt
 __pycache__/
 *.pyc
