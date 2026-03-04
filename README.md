@@ -41,15 +41,15 @@ This project is intended to:
 
 🚧 How It Works
 
--A TCP listener is started on a port (e.g., localhost:8081)
+- A TCP listener is started on a port (e.g., localhost:8081)
 
--Incoming TCP connections are accepted
+- Incoming TCP connections are accepted
 
--Raw HTTP requests are read and parsed manually
+- Raw HTTP requests are read and parsed manually
 
--Responses are written back over the socket
+- Responses are written back over the socket
 
--Demonstrates request/response flow without middleware or framework
+- Demonstrates request/response flow without middleware or framework
 
 -------
 ## Getting Started
@@ -84,11 +84,9 @@ cd HTTP_from_TCP
 -----------------
 ## 💡 Future Ideas
 
--Integrate with Chirpy_Project through TCP forwarding
+- Integrate with Chirpy_Project through TCP forwarding
 
--Add TLS support (HTTPS over TLS handshake) (Working ON It)
+- Add TLS support (HTTPS over TLS handshake) (Working ON It)
 
--Provide example clients
-
-~~~
+- Provide example clients
 
