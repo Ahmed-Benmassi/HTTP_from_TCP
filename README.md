@@ -86,8 +86,8 @@ cd HTTP_from_TCP
 -----------------
 ## 💡 Future Ideas
 
-- Integrate with Chirpy_Project through TCP forwarding
-
 - Add TLS support (HTTPS over TLS handshake) (Working ON It)
-
+  
+- Integrate with Chirpy_Project through TCP forwarding
+  
 - Provide example clients
