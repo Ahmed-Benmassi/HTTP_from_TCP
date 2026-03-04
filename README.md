@@ -12,7 +12,7 @@ This repository complements the **Chirpy JSON API** by exploring how to accept a
 ---
 ## 🚀 Goals
 
-This project is intended to:
+### This project is intended to:
 
 - Demonstrate how HTTP can be implemented over TCP sockets
 - Teach how the application layer (HTTP) interacts with the transport layer (TCP)
@@ -39,7 +39,7 @@ This project is intended to:
 ---
 
 
-🚧 How It Works
+## 🚧 How It Works
 
 - A TCP listener is started on a port (e.g., localhost:8081)
 
@@ -81,6 +81,8 @@ cd HTTP_from_TCP
 
   curl -v http://localhost:8080
 ~~~
+
+
 -----------------
 ## 💡 Future Ideas
 
@@ -89,4 +91,3 @@ cd HTTP_from_TCP
 - Add TLS support (HTTPS over TLS handshake) (Working ON It)
 
 - Provide example clients
-
