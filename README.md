@@ -41,7 +41,7 @@ This repository complements the **Chirpy JSON API** by exploring how to accept a
 
 ## 🚧 How It Works
 
-- A TCP listener is started on a port (e.g., localhost:8081)
+- A TCP listener is started on a port (e.g., localhost:8080)
 
 - Incoming TCP connections are accepted
 
